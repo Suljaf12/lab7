@@ -1,47 +1,52 @@
 body {
 	margin: auto;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	background-color: #f8f8f8;
 }
 #title {
 	margin: auto;
-	color: blue;
+	color: #3366cc;
 	text-align: center;
-	font-size: medium;
-	line-height: normal;
+	font-size: large;
+	line-height: 20px;
 }
 
 #planets,
 #planets th,
 #planets td {
-	border: 1px solid;
-	width: 70%;
+	border: 1px solid #333;
+	width: 80%;
 	border-collapse: collapse;
 	text-align: center;
-	vertical-align: baseline;
+	vertical-align: middle;
+	margin: auto;
+	margin-top: 20px;
 }
 #planets th {
 	text-decoration: underline;
-	text-decoration-color: brown;
+	text-decoration-color: #964b00;
 	text-decoration-thickness: 3px;
-	background-color: rgb(168, 168, 168);
+	background-color: #a8a8a8;
+	/* color: white; */
+	padding: 10px;
 }
 #planets td:hover {
-	background-color: green;
+	background-color: #4caf50;
+	color: white;
 }
 
 #planets tr:nth-child(odd) {
-	background: #eee;
+	background: #f0f0f0;
 }
 
 .img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	width: 100px;
 	height: 100px;
 	transition: transform 0.5s ease;
 	border-radius: 50%;
 }
 .img:hover {
-	transform: scale(1.5) rotate(360deg);
+	transform: scale(1.2) rotate(360deg);
 }
